@@ -1,0 +1,62 @@
+
+
+
+body{
+    background-color: #131413;
+    color:#39FF14;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    max-width: 1250px;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 5rem;
+    padding: 0 2rem;
+}
+
+.banner{
+    margin: 2rem 0;
+}
+
+.banner .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    /* align-items: center; */
+    justify-content: center;
+    grid-gap: 3rem;
+}
+
+.banner .description{
+    color: white;
+    text-decoration: none;
+}
+
+.course{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    /* font-family: 'Libre Franklin', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.title{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+#image-container {
+    background: url(images/logo.jpeg) left top no-repeat;
+    box-shadow: 25px 25px 50px 0 #131413 inset, -25px -25px 50px 0 #131413  inset; 
+    width: 600px;
+    height: 300px;
+    border-radius: 30px;
+}
