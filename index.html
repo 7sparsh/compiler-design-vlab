@@ -31,9 +31,26 @@
         <div class="container">
             <h3 class="course">Simulations</h3>
             <div class="grid-container">
-                <!-- <div class="item">Button 1</div> -->
-                <button class="item btn">Button1</button>
-                <button class="item btn">Button2</button>
+                
+                <button class="item btn" id="open-ass1">Valid Identifiers</button>
+                <div class="modal-container" id="modal-container-1">
+                    <div class="modal">
+                        <p class="title">Valid Identifiers</p>
+                        <p class="description">Check if a given identifier is valid or not.</p>
+                        <br>
+                        <br>
+                        <input type="text" class="modal-input" id="modal-input-ass1">
+                        <button class="modal-run" id="modal-run-ass1">Run</button>
+                        <br>
+                        <br>
+                        <br>
+                        <button id="close" class="modal-button">Done</button>
+                    </div>
+                </div>
+
+                <button class="item btn" id="open-ass2">Comment Check</button>
+                
+
                 <button class="item btn">Button3</button>
                 <button class="item btn">Button4</button>
                 <button class="item btn">Button5</button>
@@ -42,6 +59,6 @@
         </div>
     </section>
 
-    
+    <script src="app.js"></script>
 </body>
 </html>
