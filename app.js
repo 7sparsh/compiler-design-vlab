@@ -18,22 +18,22 @@ function commentCheck()
     {
         if(name.slice(1,2)=='/')
             //console.log("Single line command");
-            alert("Single line command");
+            alert("Single line comment");
             //return "Single line command";
 
         else if(name.slice(1,2)=='*')
             //console.log("Multiple line command");
-            alert("Multiple line command");
+            alert("Multiple line comment");
             //return "Multiple line command";
 
         else
             //console.log("Not a command");
-            alert("Not a command");
+            alert("Not a comment");
             //return "Not a command";
     }
 
     else
         //console.log("Not a command");
-        alert("Not a command");
+        alert("Not a comment");
         //return "Not a command";
 }
