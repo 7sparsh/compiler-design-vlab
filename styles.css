@@ -32,8 +32,9 @@ body{
 .description{
     color: white;
     text-decoration: none;
-    /* text-align: justify;  */
+    text-align: justify; 
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
 }
 
 .course{
@@ -58,6 +59,8 @@ body{
     width: 600px;
     height: 300px;
     border-radius: 30px;
+    /* padding-top: 2rem; */
+    margin-top: 5rem;
 }
 
 .grid-container{
