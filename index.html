@@ -8,6 +8,7 @@
     <style>@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,500;1,800&family=Montserrat:wght@500&display=swap');</style> 
     <link rel="stylesheet" href="styles.css">
     <title>Virtual Lab</title>
+    <link rel="icon" href="images/favicon.jpg">
 </head>
 <body>
 
@@ -18,7 +19,9 @@
                 <h1 class="course">Compiler Design</>
                 <h3 class="title">Virtual Lab</>
                 <p class="description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga earum voluptatem doloremque debitis et, libero doloribus consequuntur ducimus saepe, ut quibusdam quis suscipit molestiae dolorum esse laboriosam placeat, maiores at!
+                    A compiler translates the code written in high level language to machine language without changing the meaning of the program. It is also expected that a compiler should make the target code efficient and optimized in terms of time and space. 
+                    <br>
+                    Compiler design principles provide an in-depth view of translation and optimization process. Compiler design covers basic translation mechanism and error detection & recovery. It includes lexical, syntax, and semantic analysis as front end, and code generation and optimization as back-end.
                 </p>
             </div>
             <div id="image-container"></div>
@@ -31,6 +34,8 @@
         <div class="container">
             <h3 class="course">Simulations</h3>
             <div class="grid-container">
+
+                <!-- assignment 1 - modal 1 -->
                 
                 <button class="item btn" id="open-ass1">Comment Check</button>
                 <div class="modal-container" id="modal-container-1">
@@ -43,9 +48,11 @@
                         <button type="button" class="modal-run" id="modal-run-ass1" onclick="commentCheck();">Run</button>
                         <br>
                         <br>
-                        <button id="close" class="modal-button">Done</button>
+                        <button id="close" class="modal-button" onclick="ClearFields()">Done</button>
                     </div>
                 </div>
+
+                <!-- assignment 2 - modal 2 -->
 
                 <button class="item btn" id="open-ass2">Valid Identifiers</button>
                 <div class="modal-container" id="modal-container-2">
@@ -55,10 +62,10 @@
                         <br>
                         <br>
                         <input type="text" placeholder=" Enter text" class="modal-input" id="modal-input-ass2">
-                        <button type="button" class="modal-run" id="modal-run-ass2">Run</button>
+                        <button type="button" class="modal-run" id="modal-run-ass2" onclick="isValid()">Run</button>
                         <br>
                         <br>
-                        <button id="close-2" class="modal-button">Done</button>
+                        <button id="close-2" class="modal-button" onclick="ClearFields()">Done</button>
                     </div>
                 </div>
                 
