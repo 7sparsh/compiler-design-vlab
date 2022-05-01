@@ -34,6 +34,8 @@
         <div class="container">
             <h3 class="course">Simulations</h3>
             <div class="grid-container">
+
+                <!-- assignment 1 - modal 1 -->
                 
                 <button class="item btn" id="open-ass1">Comment Check</button>
                 <div class="modal-container" id="modal-container-1">
@@ -46,9 +48,11 @@
                         <button type="button" class="modal-run" id="modal-run-ass1" onclick="commentCheck();">Run</button>
                         <br>
                         <br>
-                        <button id="close" class="modal-button">Done</button>
+                        <button id="close" class="modal-button" onclick="ClearFields()">Done</button>
                     </div>
                 </div>
+
+                <!-- assignment 2 - modal 2 -->
 
                 <button class="item btn" id="open-ass2">Valid Identifiers</button>
                 <div class="modal-container" id="modal-container-2">
@@ -58,10 +62,10 @@
                         <br>
                         <br>
                         <input type="text" placeholder=" Enter text" class="modal-input" id="modal-input-ass2">
-                        <button type="button" class="modal-run" id="modal-run-ass2">Run</button>
+                        <button type="button" class="modal-run" id="modal-run-ass2" onclick="isValid()">Run</button>
                         <br>
                         <br>
-                        <button id="close-2" class="modal-button">Done</button>
+                        <button id="close-2" class="modal-button" onclick="ClearFields()">Done</button>
                     </div>
                 </div>
                 

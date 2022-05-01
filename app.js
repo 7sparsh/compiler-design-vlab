@@ -10,6 +10,10 @@ close.addEventListener('click', ()=>{
     modal_container_1.classList.remove('show');
 })
 
+
+
+// main function for comment checking
+
 function commentCheck()
 {
     var name = document.getElementById("modal-input-ass1").value;
@@ -36,4 +40,13 @@ function commentCheck()
         //console.log("Not a command");
         alert("Not a comment");
         //return "Not a command";
+}
+
+
+// clear text field
+
+function ClearFields() {
+
+    document.getElementById("modal-input-ass1").value = "";
+    document.getElementById("modal-input-ass2").value = "";
 }
