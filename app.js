@@ -44,15 +44,20 @@ function commentCheck(){
         //return "Not a command";
     }
     if(flag===0){
-        verdict=`${inputText}: is not a comment`
+        verdict=`${ inputText}: is not a comment`
     }
     else if(flag===1){
-        verdict=`${inputText}: is a single line comment`
+        verdict=`${ inputText}: is a single line comment`
     }
     else{
-        verdict=`${inputText}: is a multiple line comment`
+        verdict=`${ inputText}: is a multiple line comment`
     }
-    output.value=verdict;
+    if(inputText.length===0){
+        output.value=" Please enter a string";
+    }
+    else{
+        output.value=verdict;
+    }
 }
 
 
