@@ -129,10 +129,20 @@ body{
     font-size: 1em;
 }
 
-.modal-input{
+.modal-input-output{
     width: 200px;
     height: 30px;
+    margin: 1rem 0;
     border-radius: 5px;
+}
+
+/* #modal-input-ass1{
+    margin-right: 0;
+} */
+
+#modal-output-ass1{
+    width: 15rem;
+    margin-bottom: 2rem;
 }
 
 .modal-run{

@@ -16,12 +16,12 @@ close_2.addEventListener('click', ()=>{
 
 function isValid()
 {
-    var str = document.getElementById("modal-input-ass2").value;
+    let str = document.getElementById("modal-input-ass2").value;
 
     // If first character is invalid
     if (!((str[0] >= 'a' && str[0] <= 'z') || (str[0]>= 'A' && str[0] <= 'Z') || str[0] == '_'))
     {
-        alert("Invalid");
+        alert(`${str} is an Invalid Identifier`);
         return "false";
     }
   
@@ -30,13 +30,13 @@ function isValid()
     {
         if (!((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z') || (str[i] >= '0' && str[i] <= '9') || str[i] == '_'))
         {
-            alert("Invalid");
+            alert(`${str} is an Invalid Identifier`);
             return false;
         }
     }
   
     // String is a valid identifier
-    alert("Valid");
+    alert(`${str} is a Valid Identifier`);
     return true;
 }
   
