@@ -1,5 +1,7 @@
 const openAss2 = document.getElementById('open-ass2');
 const modal_container_2 = document.getElementById('modal-container-2');
+const input_2 = document.getElementById("modal-input-ass2")
+const output_2 = document.getElementById("modal-output-ass2");
 const close_2 = document.getElementById('close-2');
 
 openAss2.addEventListener('click', ()=>{
@@ -16,13 +18,22 @@ close_2.addEventListener('click', ()=>{
 
 function isValid()
 {
-    let str = document.getElementById("modal-input-ass2").value;
+    let str = input_2.value;
+    //let verdict;
 
     // If first character is invalid
-    if (!((str[0] >= 'a' && str[0] <= 'z') || (str[0]>= 'A' && str[0] <= 'Z') || str[0] == '_'))
+    // if(str.length==0)
+    //     output_2.value=`Empty string`
+    
+    if(str.length===0){
+        output_2.value=" Please enter a string";
+        return false;
+    }
+
+    else if (!((str[0] >= 'a' && str[0] <= 'z') || (str[0]>= 'A' && str[0] <= 'Z') || str[0] == '_'))
     {
-        alert(`${str} is an Invalid Identifier`);
-        return "false";
+        output_2.value=`${str} - is an Invalid Identifier`;
+        return false;
     }
   
     // Traverse the string for the rest of the characters
@@ -30,19 +41,12 @@ function isValid()
     {
         if (!((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z') || (str[i] >= '0' && str[i] <= '9') || str[i] == '_'))
         {
-            alert(`${str} is an Invalid Identifier`);
+            output_2.value=(`${str} - is an Invalid Identifier`);
             return false;
         }
     }
   
     // String is a valid identifier
-    alert(`${str} is a Valid Identifier`);
+    output_2.value=(`${str} - is a Valid Identifier`);
     return true;
 }
-  
-// if (isValid(str, n))
-//     alert("Valid");
-//     //document.write("Valid");
-// else
-//     alert("Invalid");
-//     //document.write("Invalid");

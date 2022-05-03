@@ -1,21 +1,21 @@
 const openAss1 = document.getElementById('open-ass1');
 const modal_container_1 = document.getElementById('modal-container-1');
-const input = document.getElementById("modal-input-ass1")
-const output = document.getElementById("modal-output-ass1");
-const close = document.getElementById('close');
+const input_1 = document.getElementById("modal-input-ass1")
+const output_1 = document.getElementById("modal-output-ass1");
+const close_1 = document.getElementById('close');
 
 openAss1.addEventListener('click', ()=>{
     modal_container_1.classList.add('show');
 })
 
-close.addEventListener('click', ()=>{
+close_1.addEventListener('click', ()=>{
     modal_container_1.classList.remove('show');
 })
 
 // main function for comment checking
 
 function commentCheck(){
-    let inputText = input.value;
+    let inputText = input_1.value;
     let flag = 0;
     let verdict;
 
@@ -32,31 +32,24 @@ function commentCheck(){
             flag=2
             //return "Multiple line command";
         }
-        else{
-            //console.log("Not a command");
-            // alert(`${inputText} is not a comment.`);
-            //return "Not a command";
-        }
     }
-    else{
-        //console.log("Not a command");
-        // alert(`${inputText} is not a comment.`);
-        //return "Not a command";
-    }
+    
     if(flag===0){
-        verdict=`${ inputText}: is not a comment`
+        verdict=`${inputText} - is not a comment`
     }
     else if(flag===1){
-        verdict=`${ inputText}: is a single line comment`
+        verdict=`${inputText} - is a single line comment`
     }
     else{
-        verdict=`${ inputText}: is a multiple line comment`
+        verdict=`${inputText} - is a multiple line comment`
     }
+    //output_1.value=verdict;
+
     if(inputText.length===0){
-        output.value=" Please enter a string";
+        output_1.value=" Please enter a string";
     }
     else{
-        output.value=verdict;
+        output_1.value=verdict;
     }
 }
 
@@ -67,7 +60,8 @@ function commentCheck(){
 function ClearFields() {
     document.getElementById("modal-input-ass1").value = "";
     document.getElementById("modal-input-ass2").value = "";
-    output.value="";
+    output_1.value="";
+    output2.value="";
     // output.style.border = "";
     // output.style.display="none";
 }
