@@ -61,7 +61,7 @@ function ClearFields() {
     document.getElementById("modal-input-ass1").value = "";
     document.getElementById("modal-input-ass2").value = "";
     output_1.value="";
-    output2.value="";
+    output_2.value="";
     // output.style.border = "";
     // output.style.display="none";
 }
