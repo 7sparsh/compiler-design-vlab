@@ -88,8 +88,81 @@
                         <p class="description">The process of deriving a string by expanding the leftmost non-terminal at each step is called as leftmost derivation.</p>
                         <br>
                         <br>
-                        <input type="text" placeholder=" Enter text" class="modal-input-output" id="modal-input-ass4">
-                        <button type="button" class="modal-run" id="modal-run-ass4">Run</button>
+                        <div class="lmd-grid">
+                            <div class="grid-item-1">
+                                <div class="production-rules">
+                                    <p class="title">Production Rules</p>
+                                    <p class="pr description">E->E+E</p>
+                                    <p class="pr description">E->E*E</p>
+                                    <p class="pr description">E->id</p>
+                                </div>
+                                <div class="input-string">
+                                    <p class="title">Input String</p>
+                                    <p id="input-string-p" class="description">id+id*id</p>
+                                </div>
+                            </div>
+                            <div class="grid-item-2">
+                                <p class="title" id="derivation">Derivation</p>
+                                <p class="pr description">E->E*E</p>
+                                <p class="pr description">E->E+E*E</p>
+                                <p class="pr description">E->id+E*E</p>
+                                <p class="pr description">E->id+id*E</p>
+                                <p class="pr description">E->id+id*id</p>
+                            </div>
+                        </div>
+
+                        <div class="statement-parse-tree">
+                            <div class="lmd-grid">
+                                <div class="grid-item-1">
+                                    <p class="title">Statement</p>
+                                </div>
+                                <div class="grid-item-2">
+                                    <p class="title">Parse Tree</p>
+                                </div>
+                            </div>
+                            <div class="lmd-grid">
+                                <div class="grid-item-1">
+                                    <p class="pr description">E->E*E</p>
+                                </div>
+                                <div class="grid-item-2">
+                                    <img src="images/lmd-img-1.jpeg">
+                                </div>
+                            </div>
+                            <div class="lmd-grid">
+                                <div class="grid-item-1">
+                                    <p class="pr description">E->E+E*E</p>
+                                </div>
+                                <div class="grid-item-2">
+                                    <img src="images/lmd-img-2.jpeg">
+                                </div>
+                            </div>
+                            <div class="lmd-grid">
+                                <div class="grid-item-1">
+                                    <p class="pr description">E->id+E*E</p>
+                                </div>
+                                <div class="grid-item-2">
+                                    <img src="images/lmd-img-3.jpeg">
+                                </div>
+                            </div>
+                            <div class="lmd-grid">
+                                <div class="grid-item-1">
+                                    <p class="pr description">E->id+id*E</p>
+                                </div>
+                                <div class="grid-item-2">
+                                    <img src="images/lmd-img-4.jpeg">
+                                </div>
+                            </div>
+                            <div class="lmd-grid">
+                                <div class="grid-item-1">
+                                    <p class="pr description">E->id+id*id</p>
+                                </div>
+                                <div class="grid-item-2">
+                                    <img src="images/lmd-img-5.png">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <input type="text" placeholder=" Enter text" class="modal-input-output" id="modal-input-ass4">
+                        <button type="button" class="modal-run" id="modal-run-ass4">Run</button> -->
                         <br>
                         <br>
                         <!-- <input type="text" placeholder=" Output" class="modal-input-output" id="modal-output-ass4" readonly> -->

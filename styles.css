@@ -145,7 +145,7 @@ body{
 
 .modal-lmd{
     background-color: #282828;
-    width: 1400px;
+    width: 900px;
     height: 650px;
     max-width: 100%;
     padding: 30px 50px;
@@ -189,3 +189,35 @@ body{
     font-size: 0.85em; 
     height: 30px;
 }
+
+.lmd-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 5rem;
+}
+
+.production-rules{
+    margin: 1rem 0;
+}
+
+.pr{
+    margin: 0.5rem 0;
+}
+
+.input-string{
+    margin: 2rem 0;
+}
+
+.lmd-grid .title{
+    margin-bottom: 0.5rem;
+}
+
+.lmd-grid .grid-item-2 .pr{
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.lmd-grid .row-2 .grid-item-2 .title{
+    margin-top: 0;
+}
+
