@@ -221,3 +221,133 @@ body{
     margin-top: 0;
 }
 
+.cards{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    height: 600px;
+    width: 350px;
+    border: 1px solid #FAED27;
+    background-color: #131413;
+}
+
+.profile-img{
+    width: 100%;
+    text-align: center;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-mask-image: linear-gradient(to top, transparent 1%, #1e1f26);
+}
+
+#profile-img-1{
+    background-image: url(images/souvik-2.jpeg);
+}
+
+#profile-img-2{
+    background-image: url(images/sparsh.jpeg);
+}
+
+#profile-img-3{
+    background-image: url(images/stock.jpeg);
+}
+
+#profile-img-4{
+    background-image: url(images/stock.jpeg);
+}
+
+#profile-img-5{
+    background-image: url(images/stock.jpeg);
+}
+
+.profile-img::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: skew(45deg);
+}
+
+.profile-img ul{
+    position: absolute;
+    list-style-type: none;
+}
+
+.profile-img:hover ul li{
+    transform: rotateY(0deg);
+}
+
+.profile-img:hover ul li:nth-child(1){
+    transition-delay: 0.2s;
+}
+
+.profile-img:hover ul li:nth-child(2){
+    transition-delay: 0.4s;
+}
+
+.profile-img ul li{
+    line-height: 35px;
+    width: 40px;
+    height: 40px;
+    background-color: #1e1f26;
+    text-align: center;
+    transform: rotateY(90deg);
+    transition: 0.5s ease-in-out;
+}
+
+.profile-img ul li a{
+    color: #FAED27;
+}
+
+.profile-img ul li a:hover{
+    color: #fff;
+}
+
+.detail{
+    margin: 0 20px;
+    padding: 20px;
+    color: #e7e7e7;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member-desc{
+    font-family:'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.3;
+    text-align: justify;
+    font-family: 'PT Sans', sans-serif;
+    /* margin-top: 1rem; */
+}
+
+.member-desc-sparsh{
+    font-family:'Montserrat', sans-serif;
+    margin-top: 2px;
+}
+
+.name{
+    font-size: 30px;
+    margin-bottom: 1rem;
+    font-family: 'PT Sans', sans-serif;
+    color: #FAED27;
+}
+
+.about{
+    font-size: 25px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.about-sp{
+    font-size: 25px;
+    font-family: 'PT Sans', sans-serif;
+    margin-bottom: 1rem;
+}
