@@ -6,10 +6,12 @@ const close_2 = document.getElementById('close-2');
 
 openAss2.addEventListener('click', ()=>{
     modal_container_2.classList.add('show');
+    document.body.style.overflow="hidden";
 })
 
 close_2.addEventListener('click', ()=>{
     modal_container_2.classList.remove('show');
+    document.body.style.overflow="auto";
 })
 
 

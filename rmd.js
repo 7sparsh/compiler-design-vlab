@@ -6,8 +6,10 @@ const close_5 = document.getElementById('close-5');
 
 openAss5.addEventListener('click', ()=>{
     modal_container_5.classList.add('show');
+    document.body.style.overflow="hidden";
 })
 
 close_5.addEventListener('click', ()=>{
     modal_container_5.classList.remove('show');
+    document.body.style.overflow="auto";
 })

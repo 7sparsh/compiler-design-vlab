@@ -6,10 +6,12 @@ const close_1 = document.getElementById('close');
 
 openAss1.addEventListener('click', ()=>{
     modal_container_1.classList.add('show');
+    document.body.style.overflow="hidden";
 })
 
 close_1.addEventListener('click', ()=>{
     modal_container_1.classList.remove('show');
+    document.body.style.overflow="auto";
 })
 
 // main function for comment checking
