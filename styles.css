@@ -43,6 +43,16 @@ body{
     /* font-family: 'Libre Franklin', sans-serif; */
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    color: #39FF14;
+}
+
+.course-simulations{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    /* font-family: 'Libre Franklin', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #FF3131;
 }
 
 .title{
@@ -74,7 +84,7 @@ body{
     background-color: #131413;
     font-size: 2rem;
     padding: 20px;
-    border: 1px solid #39FF14;
+    border: 1px solid #FF3131;
     border-radius: 50px;
     text-align: center;
     text-decoration: none;
@@ -82,13 +92,13 @@ body{
 
 .btn{
     width: 330px;
-    box-shadow: inset 0 0 0 0 #39FF14;
+    box-shadow: inset 0 0 0 0 #FAED27;
     transition: ease-in-out 0.5s;
     outline: none;
 }
 
 .btn:hover{
-    box-shadow: inset 330px 0 0 0 #39FF14;
+    box-shadow: inset 330px 0 0 0 #FF3131;
     color: #131413;
 }
 
