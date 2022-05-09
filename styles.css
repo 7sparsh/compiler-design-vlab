@@ -178,8 +178,12 @@ body{
     border-radius: 5px;
 }
 
-/* #modal-input-ass1{
-    margin-right: 0;
+/* #modal-input-ass3{
+    width: 200px;
+    height: 30px;
+    margin: 1rem 0;
+    border-radius: 5px;
+    overflow-y: auto;
 } */
 
 #modal-output-ass1{
