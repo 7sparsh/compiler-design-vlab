@@ -22,17 +22,13 @@ function commentCheck(){
     let verdict;
 
     if( inputText.slice(0,1)=='/'){
-        if(inputText.slice(1,2)=='/'){
-            //console.log("Single line command");
-            // alert(`${inputText} is a single line comment.`);
+        if(inputText.slice(1,2)=='/')
+        {
             flag=1;
-            //return "Single line command";
         }
-        else if(inputText.slice(1,2)=='*'){
-            //console.log("Multiple line command");
-            // alert(`${inputText} is a multiple line comment.`);
+        else if(inputText.slice(1,2)=='*')
+        {
             flag=2
-            //return "Multiple line command";
         }
     }
     
@@ -62,8 +58,10 @@ function commentCheck(){
 function ClearFields() {
     document.getElementById("modal-input-ass1").value = "";
     document.getElementById("modal-input-ass2").value = "";
+    document.getElementById("modal-input-ass3").value = "";
     output_1.value="";
     output_2.value="";
+    output_3.value="";
     // output.style.border = "";
     // output.style.display="none";
 }

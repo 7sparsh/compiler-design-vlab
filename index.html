@@ -79,7 +79,23 @@
                 
                 <!-- assignment 3 - modal 3 -->
 
-                <button class="item btn">Lexical Analyser</button>
+                <button class="item btn" id="open-ass3">Lexical Analyser</button>
+                <div class="modal-container-lmd" id="modal-container-3">
+                    <div class="modal-lmd">
+                        <p class="title">Lexical Analyser</p>
+                        <p class="description">Converting a sequence of characters of a program into a sequence of tokens</p>
+                        <br>
+                        <br>
+                        <input type="text" placeholder=" Enter text" class="modal-input-output" id="modal-input-ass3">
+                        <button type="button" class="modal-run" id="modal-run-ass3" onclick="lexicalAlanyzer()">Run</button>
+                        <br>
+                        <br>
+                        <input type="text" placeholder=" Output" class="modal-input-output" id="modal-output-ass3" readonly>
+                        <br>
+                        <br>
+                        <button id="close-3" class="modal-button" onclick="ClearFields()">Done</button>
+                    </div>
+                </div>
 
                 <!-- assignment 4 - modal 4 -->
 
@@ -420,6 +436,7 @@
 
     <script src="checkComment.js"></script>
     <script src="validateIdentifiers.js"></script>
+    <script src="lexicalAnalysis.js"></script>
     <script src="lmd.js"></script>
     <script src="rmd.js"></script>
     <script src="parseTree.js"></script>
